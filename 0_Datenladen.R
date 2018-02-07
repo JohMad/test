@@ -10,6 +10,7 @@ head(daten)
 
 plot(daten$UnitPrice[1:100])
 
-ggplot(daten[1:100,],aes(x  = StockCode,y = UnitPrice)) + geom_point()
+ggplot(daten[1:100,],aes(x  = StockCode,y = UnitPrice)) + geom_point(col="steelblue", size=3)
 
 ggsave("UnitPrice.png",width=7,height=5)
+
